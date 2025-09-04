@@ -17,5 +17,8 @@
   "workspaces": [
     "packages/*"
   ],
-  "private": true
+  "private": true,
+  "engines": {
+    "bun": ">=1.2.21"
+  }
 }
