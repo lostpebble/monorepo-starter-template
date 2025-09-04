@@ -1,0 +1,21 @@
+{
+  "name": "monorepo-starter-template",
+  "version": "1.0.0",
+  "description": "This is a template for a monorepo, change this",
+  "scripts": {
+    "format": "bunx biome format --write",
+    "clean-files": "glcl",
+    "clean-cache-files": "glcl -f glob-list.caches.clean"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "glcl": "^1.0.1",
+    "typescript": "5.9.2",
+    "@biomejs/biome": "2.2.2"
+  },
+  "dependencies": {},
+  "workspaces": [
+    "packages/*"
+  ],
+  "private": true
+}
