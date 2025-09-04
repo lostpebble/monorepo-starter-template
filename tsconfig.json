@@ -1,16 +1,32 @@
 {
   "compilerOptions": {
-    "lib": ["ESNext"],
-    "module": "nodenext",
-    "target": "esnext",
-    "moduleResolution": "nodenext",
-    "strict": true,
-    "downlevelIteration": true,
+    /* Base Options: */
+    "esModuleInterop": true,
     "skipLibCheck": true,
-    "jsx": "preserve",
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
     "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+
+    // Targeting and Environment
+    "target": "esnext",
+    "lib": ["ESNext"],
+    "module": "ESNext",
+
+    "moduleResolution": "nodenext",
+    "downlevelIteration": true,
+    "jsx": "preserve",
+    "forceConsistentCasingInFileNames": true,
+
+    // Strictness
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+
+    // Base config isn't for output
+    "noEmit": true,
+
     "types": [
       "bun-types" // add Bun global
     ]
