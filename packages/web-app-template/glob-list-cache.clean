@@ -1,0 +1,6 @@
+**/*.tsbuildinfo
+**/*/.vite
+**/*/.vite-child-compiler
+**/*/.vite-temp
+.react-router
+build

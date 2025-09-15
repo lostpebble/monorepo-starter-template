@@ -5,9 +5,10 @@
   "scripts": {
     "build": "react-router build",
     "typegen-rr": "react-router typegen",
-    "dev": "react-router dev",
+    "dev": "bun run clean-cache-files && react-router dev",
+    "clean-cache-files": "glcl -f glob-list-cache.clean",
     "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "bun run typegen-rr && tsc"
+    "type-check": "bun run typegen-rr && tsc"
   },
   "dependencies": {
     "@react-router/node": "^7.8.2",
@@ -20,10 +21,11 @@
   "devDependencies": {
     "@react-router/dev": "^7.8.2",
     "@tailwindcss/vite": "^4.1.13",
+    "@types/bun": "^1.2.21",
     "@types/react": "^19.1.12",
     "@types/react-dom": "^19.1.9",
     "tailwindcss": "^4.1.13",
-    "vite": "^7.1.4",
+    "vite": "^7.1.5",
     "vite-tsconfig-paths": "^5.1.4"
   }
 }
